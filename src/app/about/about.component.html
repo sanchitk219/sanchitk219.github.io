@@ -1,0 +1,23 @@
+<div class="container">
+  <h3 class = "arjit">About Me.</h3>
+  <div class = "row">
+    <p>Hello, my name is Sanchit and I graduated from BITS Pilani in August, 2021 with a degree in Electronics and Communication Engineering. 
+    During college I discovered programming competitions on codechef, codeforces, atcoder etc. and fell in love with programming.
+    I have had the privilege of working at both, a small company and an Indian tech giant. My interests are now in development and I am keen on
+    learning new technologies. I also want to contribute to open source as I think that it is the best way to learn new tech :)</p>
+  </div>
+    <div class = "row">
+        <h3 class = "col-6">Places I have worked:</h3>
+        <h3 class = "col-6">{{ companyTitle }}</h3>
+    </div>
+    <div class = "row">
+      <div class = "col-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor = "let company of companies; let i = index" (click) = "func(i)"> {{ company.title }} @{{ company.name }}</li>
+        </ul>
+      </div>
+      <div class = "col-6 centerDiv" *ngIf = "onSelectCompany">
+         {{ text }}
+      </div>
+    </div>
+  </div>

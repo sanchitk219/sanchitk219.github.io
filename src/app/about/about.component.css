@@ -1,0 +1,17 @@
+li:hover{
+    cursor: pointer;
+    background-color: rgb(95, 29, 75);
+    color: white;
+}
+.centerDiv{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-style: dashed;
+    border-color: rgb(95, 29, 75);
+}
+.arjit{
+    text-align: center; 
+    font-weight: bold;
+}
